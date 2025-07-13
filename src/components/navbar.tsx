@@ -1,10 +1,10 @@
 "use client"
 
 import { ModeToggle } from "@/components/mode-toggle"
-import { Button } from "@/components/ui/button"
-import { FileText } from "lucide-react"
+// import { Button } from "@/components/ui/button"
+// import { FileText } from "lucide-react"
 import Link from "next/link"
-import { RESUME_GDRIVE_LINK } from "@/utils/constants"
+// import { RESUME_GDRIVE_LINK } from "@/utils/constants"
 
 export default function Navbar() {
 	return (
