@@ -175,138 +175,138 @@ export const projects: Project[] =
 [
   {
     "title": "Cross-Platform Game Engine Framework",
-    "company": "Scopely, Inc.",
     "description": "Architected a modular engine in Go and Node.js that unified rendering, physics, and networking layers across three flagship titles, boosting code-reuse by 70 % and lowering regressions by 40 % while sustaining 60 + FPS on mobile and console.",
     "thumbnail": "/scopely-engine.png",
     "skills": ["Go", "Node.js", "WebSocket", "Redis", "PostgreSQL", "Helm", "Kubernetes", "Istio", "Prometheus", "Grafana"],
     "link": null,
-    "duration": "Jun 2023 – Feb 2024"
+    "duration": "Jun 2023 – Feb 2024",
+    "github": null
   },
   {
     "title": "Real-Time Matchmaking Microservices",
-    "company": "Scopely, Inc.",
     "description": "Designed latency-aware matchmaking services with weighted-queue algorithms and Redis pub/sub, scaling to 10× concurrent players and delivering sub-50 ms pairing times during global live events.",
     "thumbnail": "/scopely-matchmaking.png",
     "skills": ["Go", "Redis", "WebSocket", "OpenTelemetry", "Kubernetes", "CI/CD", "Terraform", "AWS", "Grafana", "Jest"],
     "link": null,
-    "duration": "Mar 2024 – Jun 2025"
+    "duration": "Mar 2024 – Jun 2025",
+    "github": null
   },
   {
     "title": "Telemetry Analytics Pipeline",
-    "company": "Scopely, Inc.",
     "description": "Implemented Kafka-backed event ingestion with Prometheus exporters and time-series dashboards, increasing analytics throughput 4× and cutting incident MTTR by 60 %.",
     "thumbnail": "/scopely-telemetry.png",
     "skills": ["Kafka", "Prometheus", "Grafana", "PostgreSQL", "Kubernetes", "Helm", "Go", "OpenTelemetry", "AWS", "ArgoCD"],
     "link": null,
-    "duration": "Jul 2024 – Jun 2025"
+    "duration": "Jul 2024 – Jun 2025",
+    "github": null
   },
   {
     "title": "Core Log-Routing Engine Redesign",
-    "company": "Cribl, Inc.",
     "description": "Re-engineered the Go-based streaming core with lock-free data structures and back-pressure controls, tripling throughput and trimming CPU usage by 40 % on production clusters.",
     "thumbnail": "/cribl-routing.png",
     "skills": ["Go", "Kafka", "OpenTelemetry", "Prometheus", "Grafana", "AWS", "Jenkins", "GitHub Actions", "Kubernetes", "Vegeta"],
     "link": null,
-    "duration": "Jun 2021 – Feb 2022"
+    "duration": "Jun 2021 – Feb 2022",
+    "github": null
   },
   {
     "title": "Real-Time Data Enrichment Service",
-    "company": "Cribl, Inc.",
     "description": "Built a Redis-backed enrichment microservice that appended context to billions of log events per day with < 50 ms latency, enabling fine-grained routing and compliance filtering.",
     "thumbnail": "/cribl-enrichment.png",
     "skills": ["Redis", "Kafka", "Go", "ClickHouse", "Kubernetes", "CircleCI", "Grafana", "JSON Schema", "gRPC", "Docker"],
     "link": null,
-    "duration": "Mar 2022 – Dec 2022"
+    "duration": "Mar 2022 – Dec 2022",
+    "github": null
   },
   {
     "title": "Data Replay & Log Reprocessing Platform",
-    "company": "Cribl, Inc.",
     "description": "Delivered a Kafka-based replay engine with idempotent writes and schema-evolution support, achieving 99.9 % fidelity for backfilling analytics stores without downtime.",
     "thumbnail": "/cribl-replay.png",
     "skills": ["Kafka", "ClickHouse", "OpenTelemetry", "Jenkins", "Kubernetes", "Go", "gRPC", "Terraform", "AWS EKS", "Grafana"],
     "link": null,
-    "duration": "Jan 2023 – May 2023"
+    "duration": "Jan 2023 – May 2023",
+    "github": null
   },
   {
     "title": "Cloud Snapshot Orchestration Platform",
-    "company": "Druva Inc.",
     "description": "Designed a multi-cloud snapshot manager using DynamoDB and AWS Step Functions that cut backup windows by 50 % and handled petabyte-scale datasets with automated consistency checks.",
     "thumbnail": "/druva-snapshot.png",
     "skills": ["AWS Lambda", "DynamoDB", "Step Functions", "S3", "Aurora PostgreSQL", "Terraform", "Airflow", "Datadog", "Python", "Go"],
     "link": null,
-    "duration": "Jun 2019 – Apr 2020"
+    "duration": "Jun 2019 – Apr 2020",
+    "github": null
   },
   {
     "title": "Serverless Backup Ingestion Microservices",
-    "company": "Druva Inc.",
     "description": "Implemented event-driven Lambda pipelines triggered by S3 and SNS that processed 10× more backups with cold-start latencies reduced to 300 ms, improving RPO targets company-wide.",
     "thumbnail": "/druva-ingestion.png",
     "skills": ["AWS Lambda", "S3", "SNS", "Python", "Node.js", "CloudWatch", "CI/CD", "GraphQL", "Datadog", "Kinesis"],
     "link": null,
-    "duration": "May 2020 – Jan 2021"
+    "duration": "May 2020 – Jan 2021",
+    "github": null
   },
   {
     "title": "Cost-Optimized Storage Tiering",
-    "company": "Druva Inc.",
     "description": "Authored S3 lifecycle and intelligent-tiering policies with predictive access heuristics, saving 35 % in monthly storage spend while maintaining sub-second restore times for hot data.",
     "thumbnail": "/druva-tiering.png",
     "skills": ["S3 Intelligent-Tiering", "Terraform", "Airflow", "Python", "Datadog", "Athena", "Redshift", "AWS Glue", "Cost Explorer", "Boto3"],
     "link": null,
-    "duration": "Feb 2021 – May 2021"
+    "duration": "Feb 2021 – May 2021",
+    "github": null
   },
   {
     "title": "AI Note Assist Clinical Documentation",
-    "company": "Tebra",
     "description": "Integrated TensorFlow-powered NLP service into EHR workflows, auto-populating 90 % of clinical notes and halving physician documentation time while maintaining HIPAA compliance.",
     "thumbnail": "/tebra-noteassist.png",
     "skills": ["TensorFlow", "Node.js", "Go", "Kubernetes", "PostgreSQL", "GraphQL", "AWS SES", "OAuth 2.0", "LaunchDarkly", "Prometheus"],
     "link": null,
-    "duration": "Jan 2018 – Jun 2018"
+    "duration": "Jan 2018 – Jun 2018",
+    "github": null
   },
   {
     "title": "HIPAA-Compliant Claims Data Pipeline",
-    "company": "Tebra",
     "description": "Built a Go microservice interfacing with clearing-house APIs to validate and submit $50 M+ monthly claims with 99.9 % accuracy, featuring retry orchestration and audit logging.",
     "thumbnail": "/tebra-claims.png",
     "skills": ["Go", "Node.js", "DynamoDB", "Kafka", "Kubernetes", "AWS SQS", "PostgreSQL", "Datadog", "Terraform", "CI/CD"],
     "link": null,
-    "duration": "Jul 2018 – Feb 2019"
+    "duration": "Jul 2018 – Feb 2019",
+    "github": null
   },
   {
     "title": "Kubernetes Migration of EHR Platform",
-    "company": "Tebra",
     "description": "Led migration of monolithic services to Kubernetes with Helm and ArgoCD, slashing deploy times from hours to minutes and enabling per-branch review apps for rapid QA.",
     "thumbnail": "/tebra-k8s.png",
     "skills": ["Kubernetes", "Helm", "ArgoCD", "Node.js", "Go", "CI/CD", "Grafana", "PostgreSQL", "AWS EKS", "LaunchDarkly"],
     "link": null,
-    "duration": "Mar 2019 – May 2019"
+    "duration": "Mar 2019 – May 2019",
+    "github": null
   },
   {
     "title": "Distributed ML Pipeline for Industrial Sensors",
-    "company": "SymphonyAI",
     "description": "Created a Kubeflow-based training pipeline processing 50 TB/month of sensor data with automatic drift detection, reducing retraining effort by 80 % and boosting model accuracy by 15 %.",
     "thumbnail": "/symphony-mlpipeline.png",
     "skills": ["Kubeflow", "TensorFlow", "Airflow", "Spark", "MLflow", "DVC", "Python", "gRPC", "Docker", "Kubernetes"],
     "link": null,
-    "duration": "Jun 2014 – Oct 2015"
+    "duration": "Jun 2014 – Oct 2015",
+    "github": null
   },
   {
     "title": "Shelf Recognition Computer Vision System",
-    "company": "SymphonyAI",
     "description": "Developed ONNX-optimized YOLOv2 models deployed on NVIDIA Jetson devices, improving shelf-stock detection precision by 20 % and enabling real-time inventory analytics for retail clients.",
     "thumbnail": "/symphony-cv.png",
     "skills": ["ONNX", "YOLOv2", "CUDA", "NVIDIA Jetson", "TensorRT", "gRPC", "Python", "OpenCV", "Edge AI", "Kubernetes"],
     "link": null,
-    "duration": "Nov 2015 – Jun 2016"
+    "duration": "Nov 2015 – Jun 2016",
+    "github": null
   },
   {
     "title": "PPML Secure Inference Framework",
-    "company": "SymphonyAI",
     "description": "Implemented privacy-preserving ML workflows using Intel SGX enclaves and remote attestation, enabling confidential inference for finance and manufacturing partners under strict compliance regimes.",
     "thumbnail": "/symphony-ppml.png",
     "skills": ["Intel SGX", "TensorFlow", "gRPC", "Go", "Kubeflow", "Airflow", "Python", "Encryption", "TLS", "CI/CD"],
     "link": null,
-    "duration": "Jul 2016 – Dec 2016"
+    "duration": "Jul 2016 – Dec 2016",
+    "github": null
   }
 ]
 
