@@ -3,7 +3,7 @@ import { Mail, Phone, MapPin } from "lucide-react"
 import { SiGithub, SiLinkedin } from "react-icons/si"
 import Link from "next/link"
 import Image from "next/image"
-import { CONTACT_INFO, PROFILE_DESCRIPTION } from "@/utils/constants"
+import { CONTACT_INFO } from "@/utils/constants"
 
 export default function About() {
 	return (
@@ -43,11 +43,11 @@ export default function About() {
 				<div className="w-full md:w-2/3">
 					<div className="text-center md:text-left">
 						<h1 className="text-4xl font-bold mb-2">{CONTACT_INFO.name}</h1>
-						<h2 className="text-xl text-muted-foreground mb-6">Full-Stack Software Engineer</h2>
+						<h2 className="text-xl text-muted-foreground mb-6">Senior Lead Software Engineer</h2>
 					</div>
 					<Card>
 						<CardContent>
-							<p className="text-muted-foreground leading-relaxed">{PROFILE_DESCRIPTION}</p>
+							<p className="text-muted-foreground leading-relaxed text-justify"><strong>Senior Software Engineer & Optimization Specialist</strong> with 11+ years of experience architecting scalable backend systems, real-time communication platforms, and machine learning pipelines across high-growth California tech companies. Combines deep expertise in algorithm design, database optimization, and system performance tuning with a strong foundation in mathematics and data structures. Proven record of leading engineering teams, improving code quality, and delivering measurable improvements including 300% performance gains, 30% cost reductions, and 99.9% system uptime. Adept in modern cloud-native infrastructure, real-time WebSocket/WebRTC systems, and advanced analytics workflows.</p>
 						</CardContent>
 					</Card>
 				</div>

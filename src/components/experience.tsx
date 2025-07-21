@@ -35,7 +35,7 @@ export default function Experience() {
 									</div>
 									<ul className="list-disc pl-5 my-3 space-y-1 text-muted-foreground">
 										{position.description.map((item, i) => (
-											<li key={i}>{item}</li>
+											<li key={i} className="text-justify">{item}</li>
 										))}
 									</ul>
 								</div>

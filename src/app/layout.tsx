@@ -18,7 +18,7 @@ const geistMono = Geist_Mono({
 })
 
 export const metadata: Metadata = {
-	title: "Jordon Celestine – Software Engineer",
+	title: "Jordon Celestine – Senior Lead Software Engineer",
 	description: "Full-stack developer with expertise in modern web stacks and AI tools."
 }
 

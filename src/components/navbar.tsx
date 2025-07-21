@@ -14,7 +14,7 @@ export default function Navbar() {
 					<Link href="/" className="font-semibold text-lg">
 						Jordon Celestine
 					</Link>
-					<span className="text-muted-foreground hidden sm:inline-block">Full-stack Software Engineer</span>
+					<span className="text-muted-foreground hidden sm:inline-block">Senior Lead Software Engineer</span>
 				</div>
 				<div className="flex items-center gap-4">
 					{/* <Button variant="outline" size="sm" className="gap-2 cursor-pointer" asChild>
