@@ -49,7 +49,7 @@ export const companies: Company[] = [
           "Developed a plug-in-based log transformation framework used by 150+ enterprise teams, improving flexibility without sacrificing reliability or runtime performance.",
           "Led the implementation of Prometheus-based observability stack and Grafana dashboards, reducing time-to-detect critical issues by 60% across staging and production environments.",
           "Built Kafka-based message reprocessing engine to support log replay capabilities, enabling 99.9% fidelity on ingestion event restoration within fault-tolerant systems.",
-          "esigned shard-balancing algorithm for high-throughput ingest nodes that adjusted routing dynamically, increasing system stability during peak traffic surges by 5x.",
+          "Designed shard-balancing algorithm for high-throughput ingest nodes that adjusted routing dynamically, increasing system stability during peak traffic surges by 5x.",
           "Automated build-and-deploy pipelines with Jenkins and GitHub Actions, reducing manual deployment errors and tripling the weekly release cadence.",
           "Rolled out distributed tracing with OpenTelemetry across microservices, greatly improving root-cause diagnostics for production outages.",
           "Mentored three engineers on Go performance profiling and channel-safe patterns, fostering a team-wide culture of efficiency and precision.",
