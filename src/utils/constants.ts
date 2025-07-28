@@ -4,7 +4,7 @@ export const CONTACT_INFO = {
   phone: "+1 (805) 362-1553",
   location: "Atascadero, CA",
   github: "https://github.com/jordon-dev",
-  linkedin: "https://www.linkedin.com/in/jordon-celestine/"
+  linkedin: "https://www.linkedin.com/in/jordon-celestine-b03448377/"
 }
 
 export const RESUME_GDRIVE_LINK = "https://drive.google.com/file/d/1pPnRPEDRwYEIhVfXU71ldJ56oN6a_Cxm/view?usp=sharing"
