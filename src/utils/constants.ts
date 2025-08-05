@@ -1,6 +1,6 @@
 export const CONTACT_INFO = {
   name: "Jordon Robert Celestine",
-  email: "jordon.celestine.dev@gmail.com",
+  email: "jordon.cele@gmail.com",
   phone: "+1 (805) 362-1553",
   location: "Atascadero, CA",
   github: "https://github.com/jordon-dev",

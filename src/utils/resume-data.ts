@@ -9,144 +9,90 @@ import {
 
 export const companies: Company[] = [
   {
-    name: "Scopely, Inc.",
-    logo: "/1.jpg",
+    name: "Nowy",
+    logo: "/1.png",
     positions: [
       {
-        title: "Senior Lead Software Engineer",
-        duration: "Jun 2023 – Jun 2025",
+        title: "Senior Software Engineer",
+        duration: "Jul 2022 – Jul 2025",
         description: [
-          "Designed and implemented a modular game engine architecture to support multiple real-time multiplayer games, improving development velocity by 70% and decreasing regression issues by 40% through unified component reuse.",
-          "Built scalable matchmaking microservices using Go and WebSocket to handle 10x the standard user concurrency, integrating real-time latency scoring to ensure optimal player distribution.",
-          "Refactored legacy backend architecture from Java monoliths into Kubernetes-based microservices using Helm and Istio, reducing deployment complexity and enabling environment parity with 80% faster CI/CD pipelines.",
-          "Developed real-time analytics ingestion pipelines using Kafka, Redis Streams, and Prometheus, allowing in-game telemetry to be aggregated and visualized with 4x the prior performance.",
-          "Collaborated with client teams to define and implement resilient WebRTC data channels for low-latency multiplayer communications across mobile and console platforms.",
-          "Orchestrated a multi-region infrastructure deployment using Terraform and EKS to support global events with seamless failover and 99.999% uptime.",
-          "Designed Redis-backed caching strategies and query optimizations to reduce average database load by 55% while supporting complex leaderboard and inventory logic.",
-          "Mentored junior developers and interns on algorithmic efficiency, conducting weekly code review sessions that improved team productivity and knowledge sharing.",
-          "Integrated advanced metrics dashboards with Grafana and Prometheus that monitored WebSocket traffic health, improving incident detection and reducing MTTR by 60%.",
-          "Implemented structured logging and distributed tracing via OpenTelemetry to enhance observability and root-cause analysis of production issues.",
-          "Automated the testing framework with Cypress and Jest to ensure end-to-end coverage, reducing production bugs by 30% over two quarters.",
-          "Spearheaded security audits and improvements using OWASP standards, resulting in a zero-issue report during the annual penetration testing review.",
-          "Worked with product and UX teams to design scalable and interactive game interfaces that maintained 60+ FPS across all devices during heavy traffic conditions.",
-          "Deployed a metrics-driven A/B testing platform to evaluate new gameplay mechanics, resulting in a 20% increase in average session time.",
-          "Led cross-functional engineering pods in agile sprints, refining estimation and planning strategies that improved sprint accuracy and delivery timelines."
+          "Re-platformed one Node.js monolith into fourteen Go and Python micro-services on Google Kubernetes Engine, shrinking p95 end-to-end latency from 1.4 s to 0.48 s and letting autoscalers react 40 percent faster during viral 50 000 rps surges described in recent Kubernetes scaling studies.",
+          "Built a multimodal ingestion pipeline that ingests 10 000 TikTok and Instagram clips daily, extracts CLIP and MiniLM embeddings, clusters points of interest with HNSW, then tags every video in under 100 ms—matching the sub-second vector-search benchmarks reported by Pinecone.",
+          "Designed a shard-aware Redis cache that blends LRU recency and LFU frequency counters; the hybrid scheme (validated by Redis Labs) pushed cache-hit ratio to 87 percent and cut itinerary-hydrate time 65 percent at Saturday peaks.",
+          "Embedded TensorFlow-Lite sentiment and image-rank models directly in the gateway layer; on-device inference (per Google Firebase labs) raised recommended-attraction click-through 25 percent and lowered checkout abandonment 12 percent.",
+          "Authored an A* plus Bayesian hill-climb optimiser that honours locked stops yet trims walking distance 18 percent on median three-day trips—leveraging open-source path-finding heuristics for travel-graph constraints.",
+          "Implemented RabbitMQ Streams feeding a WebSocket fan-out; 100 000 concurrent devices now receive plan edits in < 90 ms, doubling collaborative-planning usage compared with pre-fan-out AMQP queues.",
+          "Replaced 32 bespoke REST payloads with a persisted-query GraphQL gateway; this safelisted approach (documented by Apollo) eliminates 40 GB of monthly egress and blocks unregistered operations at the edge.",
+          "Added GitHub Actions pipelines with Argo Rollouts canary stages; mis-performing builds auto-rollback in four minutes, keeping year-to-date change-failure rate below 1.8 percent.",
+          "Stood up Kubeflow Pipelines for versioned model canaries; the workflow (mirroring recent Kubeflow case studies) shrank model-to-prod lead time from two weeks to five days while enforcing automatic rollback on AUC drops over two percent.",
+          "Deployed a shared JupyterHub on GKE with federated BigQuery views so PMs run their own cohort analyses; self-serve insight cycles now complete in minutes instead of multi-day data-engineering tickets.",
+          "Ran GPU-vs-CPU cost clinics, showing that smaller BERT-tiny variants train 22 percent cheaper on spot CPUs with mixed-precision optimisers—data that shaped the FY25 compute budget.",
+          "Launched a “Daily Quest” gamification loop via Segment events and SSE; A/B tests reached statistical power in three days across 250 000 quests, lifting 30-day retention 20 percent.",
+          "Adopted KEDA to scale idle pods to zero in non-US regions, trimming always-on compute 30 percent without impacting cold-start conversions, as recommended by KEDA cost-saving guides.",
+          "Implemented envelope encryption for all PII fields with keys stored in GCP Secret Manager; auditors closed every SOC 2 Type II finding in the first review cycle.",
+          "Drafted Prometheus burn-rate alerts tied to a 99.9 percent uptime SLO; the booking API has not burned its error budget once in twelve consecutive months thanks to fast, symptom-based paging.",
+          "Presented “From Social Scroll to Bookable Trip” at TravelTech DC 2025—highlighting Nowy’s CLIP-to-checkout stack—which ranked top-five session by attendee survey and boosted inbound engineering applications 18 percent."
         ],
       },
     ],
-    technologies: ["WebSocket", "Go", "Redis", "PostgreSQL", "Helm", "Prometheus", "Istio", "Cypress", "OpenTelemetry", "Jest"],
+    technologies: ["Go", "Python", "GKE", "Redis", "RabbitMQ", "GraphQL", "TensorFlow Lite", "CLIP", "MiniLM", "HNSW", "Kubeflow", "OpenTelemetry"],
   },
   {
-    name: "Cribl, Inc.",
+    name: "SearchLight",
     logo: "/2.png",
     positions: [
       {
-        title: "Staff Software Engineer",
-        duration: "Jun 2021 – May 2023",
+        title: "Senior Software Engineer",
+        duration: "Jan 2019 – Jun 2022",
         description: [
-          "Redesigned Cribl’s core log-routing engine using advanced concurrency models in Go, achieving a 3x throughput improvement and reducing AWS instance CPU usage by 40% under high-load conditions.",
-          "Created a real-time data enrichment microservice using Redis and Kafka, capable of maintaining <50ms processing latency while adapting to evolving schema requirements on-the-fly.",
-          "Developed a plug-in-based log transformation framework used by 150+ enterprise teams, improving flexibility without sacrificing reliability or runtime performance.",
-          "Led the implementation of Prometheus-based observability stack and Grafana dashboards, reducing time-to-detect critical issues by 60% across staging and production environments.",
-          "Built Kafka-based message reprocessing engine to support log replay capabilities, enabling 99.9% fidelity on ingestion event restoration within fault-tolerant systems.",
-          "Designed shard-balancing algorithm for high-throughput ingest nodes that adjusted routing dynamically, increasing system stability during peak traffic surges by 5x.",
-          "Automated build-and-deploy pipelines with Jenkins and GitHub Actions, reducing manual deployment errors and tripling the weekly release cadence.",
-          "Rolled out distributed tracing with OpenTelemetry across microservices, greatly improving root-cause diagnostics for production outages.",
-          "Mentored three engineers on Go performance profiling and channel-safe patterns, fostering a team-wide culture of efficiency and precision.",
-          "Integrated ClickHouse as a long-term log archive store, fine-tuning partitioning and compression for a 40% storage cost reduction.",
-          "Partnered with product team to design flexible APIs for log sampling and redaction, driving compliance with customer retention policies.",
-          "Co-authored internal RFCs on data pipeline resilience and schema evolution best practices, standardizing project planning across engineering squads.",
-          "Conducted performance load testing using Vegeta and K6, identifying critical optimizations that prevented downtime during major customer onboarding.",
-          "Introduced chaos engineering tests for message queue failure scenarios, which increased recovery time consistency and improved incident confidence.",
-          "Delivered monthly engineering talks on observability patterns and system tuning, increasing cross-team adoption of best practices."
+          "Re-wrote Searchlight’s Fit-Score inference engine in Scala with Akka Streams, splitting 240 feature functions into fully parallel graphs; recruiters now view live quality-of-hire scores while still on the call, and median end-to-end latency fell from 900 ms to 200 ms (-78 %), matching the fast-feedback promise on Searchlight’s product page.",
+          "Added an adversarial-training debias layer that tracks gradient disparities across protected classes and re-weights features in real time; gender- and ethnicity-based selection disparity dropped 43 % while ROC-AUC held at 0.92, a result Multiverse highlighted in its April 2024 acquisition release as proof of responsible AI done right.",
+          "Orchestrated Kubeflow Pipelines that kick off weekly retrains using 30-, 60-, and 90-day post-hire performance data; population-stability-index drift shrank 25 % and retention of high performers rose seven points year-over-year, validating Searchlight’s own blog guidance on closing the loop between TA and HRIS data.",
+          "Built a 130-component React + Tailwind design system that standardised typography, colour tokens, and motion presets; average UI feature shrank from 21 to 12 story points and the visual polish now mirrors the screenshots shown in customer demos.",
+          "Deployed an Apollo persisted-query GraphQL edge cache in front of CloudFront; whitelisting query hashes eliminated query drift, Aurora read IOPS fell 45 %, and the RDS bill dropped USD 3 000 per month, in line with Adobe’s published CDN-caching gains for persisted queries.",
+          "Integrated end-to-end OpenTelemetry spans piped to Grafana Tempo; flame-graph drill-downs cut mean-time-to-resolution 61 % across six quarters, pushing the team into the top quartile of DORA MTTR benchmarks cited in Grafana Labs’ observability report.",
+          "Held 80 % test coverage across 20 repos using Jest and Playwright with mutation-score gates; flaky tests stayed below two percent, customer-visible regressions fell 30 %, and the practice helped sustain Searchlight’s SOC 2 Type 2 marketing claim of zero uncontrolled code paths.",
+          "Delivered Slack Hiring Radar by wiring EventBridge streams to a custom Slack app; recruiters receive a DM five seconds after a candidate finishes the final assessment, doubling same-day outreach and lifting offer acceptances 13 %, as highlighted on Searchlight’s integrations page.",
+          "Replaced a high-fee third-party video-analytics vendor with Amazon Rekognition pipelines that tag non-verbal cues; per-minute cost fell 60 % and video-task completion jumped 11 %, leveraging AWS’s pretrained facial and sentiment APIs.",
+          "Introduced weighted blue-green deploys on AWS Fargate using Route 53 health probes; the team now ships production code every Wednesday in a four-hour window with zero user downtime, and the change-failure rate has stayed under two percent for eight straight quarters—numbers validated in weekly release notes.",
+          "Authored a 22-page Responsible AI Playbook covering fairness metrics, drift alerts, and LIME-based explanations; Multiverse adopted the guide verbatim post-acquisition, and The Times cited the document as a cornerstone of the deal’s ethics narrative.",
+          "Presented “Fair AI in Hiring” at Women Who Code SF, drawing 300 in-person attendees and 5,000 replay views. The talk generated 40 inbound partner leads and bolstered Searchlight’s position as a thought leader in unbiased selection.",
+          "Integrated Datadog Real-User Monitoring into the candidate portal; median page-load time dropped from 5.3 seconds to 2.5 seconds and assessment completion jumped 14%, a gain that disproportionately improved funnel pass-through for underrepresented groups.",
+          "Encrypted every candidate record with field-level AWS KMS envelope keys; the subsequent SOC 2 audit logged zero findings, a first for the company, and the compliance badge now features prominently on Searchlight’s integrations landing page.",
+          "Launched an anonymised Skills Graph API that surfaces cohort insights for HR analytics teams; the add-on closed two Fortune 500 upsells in its first quarter, generating USD 1.1 million ARR while staying GDPR-compliant via differential-privacy noise injection."
         ],
       },
     ],
-    technologies: ["Kafka", "ClickHouse", "GitHub Actions", "Jenkins", "Grafana", "Vegeta", "OpenTelemetry", "Go", "RabbitMQ", "CircleCI"],
+    technologies: ["Scala", "Akka Streams", "Kubeflow", "GraphQL", "React", "Tailwind", "AWS Fargate", "Rekognition", "OpenTelemetry", "Jest", "Playwright", "Datadog RUM"],
   },
   {
     name: "Druva Inc.",
     logo: "/3.png",
     positions: [
       {
-        title: "Senior Software Engineer",
-        duration: "Jun 2019 – May 2021",
+        title: "Software Engineer",
+        duration: "Jun 2014 – Dec 2018",
         description: [
-          "Designed SaaS backup orchestration system with consistent snapshot management using DynamoDB, which reduced backup time by 50% and scaled to petabyte workloads.Architected global SaaS backup architecture handling petabytes of data across multi-cloud platforms.",
-          "Built Lambda-based ingestion microservices using event triggers from S3 and SNS to process real-time backups with a cold start time optimized to under 300ms.",
-          "Deployed high-availability metadata layer using Redis and DynamoDB for geo-redundant nodes with consistent access times under 50ms, achieving 99.999% durability.",
-          "Tuned PostgreSQL indexes and PostgreSQL-to-Aurora migrations for performance gains of 2x during peak IOPS workloads on the backup metadata path.",
-          "Integrated encryption-at-rest and IAM-based access control policies to ensure compliance with SOC2 and HIPAA standards, validated by third-party audits.",
-          "Created internal library for backup snapshot versioning, standardized across products and reducing integration effort across teams.",
-          "Reduced cloud spend by 35% using S3 tiering and lifecycle automation rules tailored to data access heuristics, saving over $50K monthly.",
-          "Built dashboards in Datadog and Grafana to track job-level metrics across backup retries, improving visibility and reducing incident MTTR by 55%.",
-          "Implemented secure multi-tenant backup with isolation guarantees, leveraging namespace-aware queuing and multi-tenant tagging throughout backend flows.",
-          "Led a roadmap initiative to migrate the legacy cron scheduler to Airflow, reducing job overlap incidents and improving observability of long-running tasks.",
-          "Ran game-day testing simulations for system failover scenarios and built internal runbooks that improved on-call engineer response time.",
-          "Spearheaded transition to event-driven data workflows using Kafka, improving data consistency and decoupling backup orchestration from real-time logging.",
-          "Mentored two junior engineers and created onboarding material focused on distributed system debugging and cloud cost awareness.",
-          "Presented at Dev Day on “Building Snapshot Systems at Scale,” sharing techniques for conflict resolution in versioned backups.",
-          "Defined OKRs for backend team including SLAs and throughput goals, aligned quarterly performance tracking with engineering leadership.",
+          "Designed a DynamoDB-stream snapshot scheduler with AWS Step Functions that halved petabyte-scale backup windows and eliminated nightly write contention on metadata shards.",
+          "Implemented a Go ingestion service with token-bucket back-pressure sustaining 500 k events per second and logging zero data loss during peak migrations for three Fortune 100 clients.",
+          "Led Postgres-to-Aurora migration via logical replication and parallel VACUUM; peak IOPS doubled and per-query cost fell 35 percent, freeing capacity for new GovCloud tenants.",
+          "Built an Isolation-Forest ransomware detector over ClickHouse aggregates; triage time dropped from two hours to thirty minutes and saved a Fortune 500 customer from a seven-figure ransom.",
+          "Reduced Lambda cold-start p50 from 1.2 s to 0.28 s with Provisioned Concurrency and layer slimming, guaranteeing near-instant restore APIs after scale-outs.",
+          "Automated S3 lifecycle transitions to Intelligent-Tiering and Deep Archive, reducing storage spend fifty thousand dollars a month without missing SLA restoration targets.",
+          "Added Thanos long-term metric retention for thirteen months to satisfy HIPAA and SEC audit trails, surfacing slow-drift performance regressions early.",
+          "Built Jenkins blue-green pipeline templates; change-failure rate stayed below two percent for six straight quarters, allowing Friday releases without extra on-call staffing.",
+          "Wrote a shard-aware write RFC still referenced across engineering to prevent hot partitions; adoption cut P99 latency spikes 40 percent.",
+          "Ran quarterly chaos drills with Pumba and AWS Fault Injection Simulator; full-stack recovery SLA tightened from sixty minutes to fifteen.",
+          "Presented “Fast Delta-Copy Snapshots” at AWS re:Invent Birds-of-a-Feather to 120 engineers; follow-up workshop spawned industry blog coverage.",
+          "Released a one-click restore wizard that trimmed support tickets forty percent and ranked top-three in 2020 NPS survey.",
+          "Standardised new customer setups with Terraform modules, enabling greenfield environments in under thirty minutes instead of multi-day manual builds.",
+          "Mentored six graduate hires on IAM least privilege and threat modeling; all passed security reviews unassisted by month six, boosting team autonomy.",
+          "Integrated GuardDuty and SecurityHub alerts into OpsGenie, reducing false-positive pages eighteen percent and improving engineer well-being scores.",
+          "Instrumented Prometheus throughput histograms that revealed NIC saturation, prompting a 2× hardware upgrade and yielding 3× ingest capacity for fiscal year 2021."
         ],
       },
     ],
     technologies: ["AWS Lambda", "S3", "DynamoDB", "Aurora PostgreSQL", "Airflow", "Datadog", "PgHero", "Terraform", "GraphQL", "SNS/SQS"],
-  },
-  {
-    name: "Tebra",
-    logo: "/4.png",
-    positions: [
-      {
-        title: "Staff Engineer, Backend Services",
-        duration: "Jan 2017 – May 2019",
-        description: [
-          "Developed Go and Node.js microservices for healthcare scheduling, billing, and real-time communication, supporting 99.99% uptime and HIPAA-grade audit trails.",
-          "Architected ML-powered clinical documentation tool using PyTorch and TensorFlow that automated charting, cutting physician workload by 50% with 90%+ accuracy.",
-          "Led the monolith-to-Kubernetes migration, reducing deployment times from hours to minutes and enabling self-service dev environments using Helm templates.",
-          "Built insurance eligibility verification microservice interfacing with clearinghouses and payer APIs, processing $50M/month in claims with <0.1% rejection rate.",
-          "Established secure JWT + OAuth2 token exchange between frontend apps and backend APIs, standardizing auth flows and third-party integrations.",
-          "Defined GraphQL API schema across frontend and mobile platforms to streamline client-side logic and minimize overfetching.",
-          "Automated patient reminders and notifications using AWS SES/SNS queues with deduplication logic, increasing appointment adherence by 25%.",
-          "Constructed scalable lab order pipeline with error retries, state transitions, and audit logs, reducing manual intervention from support staff.",
-          "Introduced environment-specific feature flags and phased rollouts using LaunchDarkly to support safe experimentation and reduce hotfixes.",
-          "Monitored API and DB query performance with Datadog and PgHero, leading query rewrites that dropped average response time by 40%.",
-          "Facilitated cross-functional standups, retrospectives, and planning rituals with Product and Design, reducing delivery misalignment across verticals.",
-          "Mentored junior developers and wrote internal guides on optimizing backend performance and real-time system reliability.",
-          "Participated in triage rotations and managed escalated issues during production outages, building a knowledge base from root cause summaries.",
-          "Contributed to annual security audit by hardening endpoints, eliminating secrets in code, and implementing secure headers via middleware.",
-          "Delivered training workshops on REST/GraphQL architecture tradeoffs and data integrity validation for clinical datasets."
-        ],
-      },
-    ],
-    technologies: ["Node.js", "TensorFlow", "PyTorch", "LaunchDarkly", "MongoDB", "OAuth 2.0", "TypeScript", "Neo4j", "RabbitMQ", "AWS SES"],
-  },
-  {
-    name: "SymphonyAI",
-    logo: "/5.png",
-    positions: [
-      {
-        title: "Machine Learning Engineer",
-        duration: "Jun 2014 – Dec 2016",
-        description: [
-          "Designed distributed ML pipelines with Kubeflow and Airflow to process 50TB/month sensor and transaction data, incorporating model drift detection and rollback strategies.",
-          "Implemented computer vision systems for object recognition using YOLOv2 and ONNX optimization, improving inference latency at the edge by 35%.",
-          "Built real-time inference services using gRPC and CUDA-accelerated TensorFlow, deploying via NVIDIA Jetson devices for industrial customers.",
-          "Integrated PPML methods with Intel SGX-based enclaves for confidential ML, satisfying security compliance for banking and manufacturing customers.",
-          "Automated model lifecycle management using MLflow, DVC, and Jenkins, reducing model promotion time from staging to production by 70%.",
-          "Created internal tools for experiment tracking and visual regression reporting, now adopted as standard for all ML teams.",
-          "Published internal whitepapers on multi-stage pipeline orchestration and secure federated learning protocols.",
-          "Collaborated with product and engineering teams to scope and deliver ML-backed features in fraud detection and asset monitoring.",
-          "Deployed Spark-based ETL jobs to clean and normalize incoming data streams before training phases, supporting 100M+ records per day.",
-          "Partnered with QA to define synthetic test datasets, automating validation steps in training and deployment pipelines.",
-          "Led data privacy reviews to ensure anonymization of PII during preprocessing and downstream modeling stages.",
-          "Delivered monthly internal lectures on explainable AI (XAI) and bias detection in industrial predictive models.",
-          "Worked with DevOps to optimize Kubernetes node pools and GPU utilization for continuous training workloads.",
-          "Mentored ML interns on data wrangling, hyperparameter tuning, and serving models under tight latency constraints.",
-          "Filed three patent disclosures on ML infrastructure improvements related to data caching and real-time feedback loops."
-        ],
-      },
-    ],
-    technologies: ["Kubeflow", "MLflow", "ONNX", "YOLOv2", "Scikit-learn", "DVC", "NVIDIA Jetson", "Spark", "gRPC", "CUDA"],
   },
 ]
 
@@ -171,213 +117,213 @@ export const education: Education[] = [
   },
 ]
 
-export const projects: Project[] = 
-[
-  {
-    "title": "Cross-Platform Game Engine Framework",
-    "description": "Architected a modular engine in Go and Node.js that unified rendering, physics, and networking layers across three flagship titles, boosting code-reuse by 70 % and lowering regressions by 40 % while sustaining 60 + FPS on mobile and console.",
-    "thumbnail": "/scopely-engine.png",
-    "skills": ["Go", "Node.js", "WebSocket", "Redis", "PostgreSQL", "Helm", "Kubernetes", "Istio", "Prometheus", "Grafana"],
-    "link": null,
-    "duration": "Jun 2023 – Feb 2024",
-    "github": null
-  },
-  {
-    "title": "Real-Time Matchmaking Microservices",
-    "description": "Designed latency-aware matchmaking services with weighted-queue algorithms and Redis pub/sub, scaling to 10× concurrent players and delivering sub-50 ms pairing times during global live events.",
-    "thumbnail": "/scopely-matchmaking.png",
-    "skills": ["Go", "Redis", "WebSocket", "OpenTelemetry", "Kubernetes", "CI/CD", "Terraform", "AWS", "Grafana", "Jest"],
-    "link": null,
-    "duration": "Mar 2024 – Jun 2025",
-    "github": null
-  },
-  {
-    "title": "Telemetry Analytics Pipeline",
-    "description": "Implemented Kafka-backed event ingestion with Prometheus exporters and time-series dashboards, increasing analytics throughput 4× and cutting incident MTTR by 60 %.",
-    "thumbnail": "/scopely-telemetry.png",
-    "skills": ["Kafka", "Prometheus", "Grafana", "PostgreSQL", "Kubernetes", "Helm", "Go", "OpenTelemetry", "AWS", "ArgoCD"],
-    "link": null,
-    "duration": "Jul 2024 – Jun 2025",
-    "github": null
-  },
-  {
-    "title": "Core Log-Routing Engine Redesign",
-    "description": "Re-engineered the Go-based streaming core with lock-free data structures and back-pressure controls, tripling throughput and trimming CPU usage by 40 % on production clusters.",
-    "thumbnail": "/cribl-routing.png",
-    "skills": ["Go", "Kafka", "OpenTelemetry", "Prometheus", "Grafana", "AWS", "Jenkins", "GitHub Actions", "Kubernetes", "Vegeta"],
-    "link": null,
-    "duration": "Jun 2021 – Feb 2022",
-    "github": null
-  },
-  {
-    "title": "Real-Time Data Enrichment Service",
-    "description": "Built a Redis-backed enrichment microservice that appended context to billions of log events per day with < 50 ms latency, enabling fine-grained routing and compliance filtering.",
-    "thumbnail": "/cribl-enrichment.png",
-    "skills": ["Redis", "Kafka", "Go", "ClickHouse", "Kubernetes", "CircleCI", "Grafana", "JSON Schema", "gRPC", "Docker"],
-    "link": null,
-    "duration": "Mar 2022 – Dec 2022",
-    "github": null
-  },
-  {
-    "title": "Data Replay & Log Reprocessing Platform",
-    "description": "Delivered a Kafka-based replay engine with idempotent writes and schema-evolution support, achieving 99.9 % fidelity for backfilling analytics stores without downtime.",
-    "thumbnail": "/cribl-replay.png",
-    "skills": ["Kafka", "ClickHouse", "OpenTelemetry", "Jenkins", "Kubernetes", "Go", "gRPC", "Terraform", "AWS EKS", "Grafana"],
-    "link": null,
-    "duration": "Jan 2023 – May 2023",
-    "github": null
-  },
-  {
-    "title": "Cloud Snapshot Orchestration Platform",
-    "description": "Designed a multi-cloud snapshot manager using DynamoDB and AWS Step Functions that cut backup windows by 50 % and handled petabyte-scale datasets with automated consistency checks.",
-    "thumbnail": "/druva-snapshot.png",
-    "skills": ["AWS Lambda", "DynamoDB", "Step Functions", "S3", "Aurora PostgreSQL", "Terraform", "Airflow", "Datadog", "Python", "Go"],
-    "link": null,
-    "duration": "Jun 2019 – Apr 2020",
-    "github": null
-  },
-  {
-    "title": "Serverless Backup Ingestion Microservices",
-    "description": "Implemented event-driven Lambda pipelines triggered by S3 and SNS that processed 10× more backups with cold-start latencies reduced to 300 ms, improving RPO targets company-wide.",
-    "thumbnail": "/druva-ingestion.png",
-    "skills": ["AWS Lambda", "S3", "SNS", "Python", "Node.js", "CloudWatch", "CI/CD", "GraphQL", "Datadog", "Kinesis"],
-    "link": null,
-    "duration": "May 2020 – Jan 2021",
-    "github": null
-  },
-  {
-    "title": "Cost-Optimized Storage Tiering",
-    "description": "Authored S3 lifecycle and intelligent-tiering policies with predictive access heuristics, saving 35 % in monthly storage spend while maintaining sub-second restore times for hot data.",
-    "thumbnail": "/druva-tiering.png",
-    "skills": ["S3 Intelligent-Tiering", "Terraform", "Airflow", "Python", "Datadog", "Athena", "Redshift", "AWS Glue", "Cost Explorer", "Boto3"],
-    "link": null,
-    "duration": "Feb 2021 – May 2021",
-    "github": null
-  },
-  {
-    "title": "AI Note Assist Clinical Documentation",
-    "description": "Integrated TensorFlow-powered NLP service into EHR workflows, auto-populating 90 % of clinical notes and halving physician documentation time while maintaining HIPAA compliance.",
-    "thumbnail": "/tebra-noteassist.png",
-    "skills": ["TensorFlow", "Node.js", "Go", "Kubernetes", "PostgreSQL", "GraphQL", "AWS SES", "OAuth 2.0", "LaunchDarkly", "Prometheus"],
-    "link": null,
-    "duration": "Jan 2018 – Jun 2018",
-    "github": null
-  },
-  {
-    "title": "HIPAA-Compliant Claims Data Pipeline",
-    "description": "Built a Go microservice interfacing with clearing-house APIs to validate and submit $50 M+ monthly claims with 99.9 % accuracy, featuring retry orchestration and audit logging.",
-    "thumbnail": "/tebra-claims.png",
-    "skills": ["Go", "Node.js", "DynamoDB", "Kafka", "Kubernetes", "AWS SQS", "PostgreSQL", "Datadog", "Terraform", "CI/CD"],
-    "link": null,
-    "duration": "Jul 2018 – Feb 2019",
-    "github": null
-  },
-  {
-    "title": "Kubernetes Migration of EHR Platform",
-    "description": "Led migration of monolithic services to Kubernetes with Helm and ArgoCD, slashing deploy times from hours to minutes and enabling per-branch review apps for rapid QA.",
-    "thumbnail": "/tebra-k8s.png",
-    "skills": ["Kubernetes", "Helm", "ArgoCD", "Node.js", "Go", "CI/CD", "Grafana", "PostgreSQL", "AWS EKS", "LaunchDarkly"],
-    "link": null,
-    "duration": "Mar 2019 – May 2019",
-    "github": null
-  },
-  {
-    "title": "Distributed ML Pipeline for Industrial Sensors",
-    "description": "Created a Kubeflow-based training pipeline processing 50 TB/month of sensor data with automatic drift detection, reducing retraining effort by 80 % and boosting model accuracy by 15 %.",
-    "thumbnail": "/symphony-mlpipeline.png",
-    "skills": ["Kubeflow", "TensorFlow", "Airflow", "Spark", "MLflow", "DVC", "Python", "gRPC", "Docker", "Kubernetes"],
-    "link": null,
-    "duration": "Jun 2014 – Oct 2015",
-    "github": null
-  },
-  {
-    "title": "Shelf Recognition Computer Vision System",
-    "description": "Developed ONNX-optimized YOLOv2 models deployed on NVIDIA Jetson devices, improving shelf-stock detection precision by 20 % and enabling real-time inventory analytics for retail clients.",
-    "thumbnail": "/symphony-cv.png",
-    "skills": ["ONNX", "YOLOv2", "CUDA", "NVIDIA Jetson", "TensorRT", "gRPC", "Python", "OpenCV", "Edge AI", "Kubernetes"],
-    "link": null,
-    "duration": "Nov 2015 – Jun 2016",
-    "github": null
-  },
-  {
-    "title": "PPML Secure Inference Framework",
-    "description": "Implemented privacy-preserving ML workflows using Intel SGX enclaves and remote attestation, enabling confidential inference for finance and manufacturing partners under strict compliance regimes.",
-    "thumbnail": "/symphony-ppml.png",
-    "skills": ["Intel SGX", "TensorFlow", "gRPC", "Go", "Kubeflow", "Airflow", "Python", "Encryption", "TLS", "CI/CD"],
-    "link": null,
-    "duration": "Jul 2016 – Dec 2016",
-    "github": null
-  }
-]
+export const projects: Project[] =
+  [
+    {
+      "title": "Cross-Platform Game Engine Framework",
+      "description": "Architected a modular engine in Go and Node.js that unified rendering, physics, and networking layers across three flagship titles, boosting code-reuse by 70 % and lowering regressions by 40 % while sustaining 60 + FPS on mobile and console.",
+      "thumbnail": "/scopely-engine.png",
+      "skills": ["Go", "Node.js", "WebSocket", "Redis", "PostgreSQL", "Helm", "Kubernetes", "Istio", "Prometheus", "Grafana"],
+      "link": null,
+      "duration": "Jun 2023 – Feb 2024",
+      "github": null
+    },
+    {
+      "title": "Real-Time Matchmaking Microservices",
+      "description": "Designed latency-aware matchmaking services with weighted-queue algorithms and Redis pub/sub, scaling to 10× concurrent players and delivering sub-50 ms pairing times during global live events.",
+      "thumbnail": "/scopely-matchmaking.png",
+      "skills": ["Go", "Redis", "WebSocket", "OpenTelemetry", "Kubernetes", "CI/CD", "Terraform", "AWS", "Grafana", "Jest"],
+      "link": null,
+      "duration": "Mar 2024 – Jun 2025",
+      "github": null
+    },
+    {
+      "title": "Telemetry Analytics Pipeline",
+      "description": "Implemented Kafka-backed event ingestion with Prometheus exporters and time-series dashboards, increasing analytics throughput 4× and cutting incident MTTR by 60 %.",
+      "thumbnail": "/scopely-telemetry.png",
+      "skills": ["Kafka", "Prometheus", "Grafana", "PostgreSQL", "Kubernetes", "Helm", "Go", "OpenTelemetry", "AWS", "ArgoCD"],
+      "link": null,
+      "duration": "Jul 2024 – Jun 2025",
+      "github": null
+    },
+    {
+      "title": "Core Log-Routing Engine Redesign",
+      "description": "Re-engineered the Go-based streaming core with lock-free data structures and back-pressure controls, tripling throughput and trimming CPU usage by 40 % on production clusters.",
+      "thumbnail": "/cribl-routing.png",
+      "skills": ["Go", "Kafka", "OpenTelemetry", "Prometheus", "Grafana", "AWS", "Jenkins", "GitHub Actions", "Kubernetes", "Vegeta"],
+      "link": null,
+      "duration": "Jun 2021 – Feb 2022",
+      "github": null
+    },
+    {
+      "title": "Real-Time Data Enrichment Service",
+      "description": "Built a Redis-backed enrichment microservice that appended context to billions of log events per day with < 50 ms latency, enabling fine-grained routing and compliance filtering.",
+      "thumbnail": "/cribl-enrichment.png",
+      "skills": ["Redis", "Kafka", "Go", "ClickHouse", "Kubernetes", "CircleCI", "Grafana", "JSON Schema", "gRPC", "Docker"],
+      "link": null,
+      "duration": "Mar 2022 – Dec 2022",
+      "github": null
+    },
+    {
+      "title": "Data Replay & Log Reprocessing Platform",
+      "description": "Delivered a Kafka-based replay engine with idempotent writes and schema-evolution support, achieving 99.9 % fidelity for backfilling analytics stores without downtime.",
+      "thumbnail": "/cribl-replay.png",
+      "skills": ["Kafka", "ClickHouse", "OpenTelemetry", "Jenkins", "Kubernetes", "Go", "gRPC", "Terraform", "AWS EKS", "Grafana"],
+      "link": null,
+      "duration": "Jan 2023 – May 2023",
+      "github": null
+    },
+    {
+      "title": "Cloud Snapshot Orchestration Platform",
+      "description": "Designed a multi-cloud snapshot manager using DynamoDB and AWS Step Functions that cut backup windows by 50 % and handled petabyte-scale datasets with automated consistency checks.",
+      "thumbnail": "/druva-snapshot.png",
+      "skills": ["AWS Lambda", "DynamoDB", "Step Functions", "S3", "Aurora PostgreSQL", "Terraform", "Airflow", "Datadog", "Python", "Go"],
+      "link": null,
+      "duration": "Jun 2019 – Apr 2020",
+      "github": null
+    },
+    {
+      "title": "Serverless Backup Ingestion Microservices",
+      "description": "Implemented event-driven Lambda pipelines triggered by S3 and SNS that processed 10× more backups with cold-start latencies reduced to 300 ms, improving RPO targets company-wide.",
+      "thumbnail": "/druva-ingestion.png",
+      "skills": ["AWS Lambda", "S3", "SNS", "Python", "Node.js", "CloudWatch", "CI/CD", "GraphQL", "Datadog", "Kinesis"],
+      "link": null,
+      "duration": "May 2020 – Jan 2021",
+      "github": null
+    },
+    {
+      "title": "Cost-Optimized Storage Tiering",
+      "description": "Authored S3 lifecycle and intelligent-tiering policies with predictive access heuristics, saving 35 % in monthly storage spend while maintaining sub-second restore times for hot data.",
+      "thumbnail": "/druva-tiering.png",
+      "skills": ["S3 Intelligent-Tiering", "Terraform", "Airflow", "Python", "Datadog", "Athena", "Redshift", "AWS Glue", "Cost Explorer", "Boto3"],
+      "link": null,
+      "duration": "Feb 2021 – May 2021",
+      "github": null
+    },
+    {
+      "title": "AI Note Assist Clinical Documentation",
+      "description": "Integrated TensorFlow-powered NLP service into EHR workflows, auto-populating 90 % of clinical notes and halving physician documentation time while maintaining HIPAA compliance.",
+      "thumbnail": "/tebra-noteassist.png",
+      "skills": ["TensorFlow", "Node.js", "Go", "Kubernetes", "PostgreSQL", "GraphQL", "AWS SES", "OAuth 2.0", "LaunchDarkly", "Prometheus"],
+      "link": null,
+      "duration": "Jan 2018 – Jun 2018",
+      "github": null
+    },
+    {
+      "title": "HIPAA-Compliant Claims Data Pipeline",
+      "description": "Built a Go microservice interfacing with clearing-house APIs to validate and submit $50 M+ monthly claims with 99.9 % accuracy, featuring retry orchestration and audit logging.",
+      "thumbnail": "/tebra-claims.png",
+      "skills": ["Go", "Node.js", "DynamoDB", "Kafka", "Kubernetes", "AWS SQS", "PostgreSQL", "Datadog", "Terraform", "CI/CD"],
+      "link": null,
+      "duration": "Jul 2018 – Feb 2019",
+      "github": null
+    },
+    {
+      "title": "Kubernetes Migration of EHR Platform",
+      "description": "Led migration of monolithic services to Kubernetes with Helm and ArgoCD, slashing deploy times from hours to minutes and enabling per-branch review apps for rapid QA.",
+      "thumbnail": "/tebra-k8s.png",
+      "skills": ["Kubernetes", "Helm", "ArgoCD", "Node.js", "Go", "CI/CD", "Grafana", "PostgreSQL", "AWS EKS", "LaunchDarkly"],
+      "link": null,
+      "duration": "Mar 2019 – May 2019",
+      "github": null
+    },
+    {
+      "title": "Distributed ML Pipeline for Industrial Sensors",
+      "description": "Created a Kubeflow-based training pipeline processing 50 TB/month of sensor data with automatic drift detection, reducing retraining effort by 80 % and boosting model accuracy by 15 %.",
+      "thumbnail": "/symphony-mlpipeline.png",
+      "skills": ["Kubeflow", "TensorFlow", "Airflow", "Spark", "MLflow", "DVC", "Python", "gRPC", "Docker", "Kubernetes"],
+      "link": null,
+      "duration": "Jun 2014 – Oct 2015",
+      "github": null
+    },
+    {
+      "title": "Shelf Recognition Computer Vision System",
+      "description": "Developed ONNX-optimized YOLOv2 models deployed on NVIDIA Jetson devices, improving shelf-stock detection precision by 20 % and enabling real-time inventory analytics for retail clients.",
+      "thumbnail": "/symphony-cv.png",
+      "skills": ["ONNX", "YOLOv2", "CUDA", "NVIDIA Jetson", "TensorRT", "gRPC", "Python", "OpenCV", "Edge AI", "Kubernetes"],
+      "link": null,
+      "duration": "Nov 2015 – Jun 2016",
+      "github": null
+    },
+    {
+      "title": "PPML Secure Inference Framework",
+      "description": "Implemented privacy-preserving ML workflows using Intel SGX enclaves and remote attestation, enabling confidential inference for finance and manufacturing partners under strict compliance regimes.",
+      "thumbnail": "/symphony-ppml.png",
+      "skills": ["Intel SGX", "TensorFlow", "gRPC", "Go", "Kubeflow", "Airflow", "Python", "Encryption", "TLS", "CI/CD"],
+      "link": null,
+      "duration": "Jul 2016 – Dec 2016",
+      "github": null
+    }
+  ]
 
 
 export const skillCategories: SkillCategory[] = [
   {
     "name": "Frontend",
     "skills": [
-      { "name": "React",        "level": 5 },
-      { "name": "Next.js",      "level": 5 },
+      { "name": "React", "level": 5 },
+      { "name": "Next.js", "level": 5 },
       { "name": "Tailwind CSS", "level": 5 },
-      { "name": "Flutter / Dart","level": 4 },
+      { "name": "Flutter / Dart", "level": 4 },
       { "name": "GraphQL Client (Apollo, URQL)", "level": 4 }
     ]
   },
   {
     "name": "Languages",
     "skills": [
-      { "name": "Java / C++",          "level": 5 },
-      { "name": "TypeScript",  "level": 5 },
-      { "name": "JavaScript",      "level": 5 },
-      { "name": "Python",  "level": 5 },
-      { "name": "Go",  "level": 4 }
+      { "name": "Java / C++", "level": 5 },
+      { "name": "TypeScript", "level": 5 },
+      { "name": "JavaScript", "level": 5 },
+      { "name": "Python", "level": 5 },
+      { "name": "Go", "level": 4 }
     ]
   },
   {
     "name": "Backend & Frameworks",
     "skills": [
-      { "name": "Node.js / Express",       "level": 5 },
-      { "name": "gRPC / REST / GraphQL",   "level": 5 },
+      { "name": "Node.js / Express", "level": 5 },
+      { "name": "gRPC / REST / GraphQL", "level": 5 },
       { "name": "Kafka & Event Streaming", "level": 4 },
-      { "name": "WebSocket / WebRTC",      "level": 4 },
-      { "name": "Gin / Fiber (Go)",        "level": 4 }
+      { "name": "WebSocket / WebRTC", "level": 4 },
+      { "name": "Gin / Fiber (Go)", "level": 4 }
     ]
   },
   {
     "name": "Cloud & DevOps",
     "skills": [
-      { "name": "AWS / GCP / Azure",          "level": 5 },
-      { "name": "Kubernetes + Helm",          "level": 5 },
-      { "name": "Docker & Terraform",         "level": 4 },
+      { "name": "AWS / GCP / Azure", "level": 5 },
+      { "name": "Kubernetes + Helm", "level": 5 },
+      { "name": "Docker & Terraform", "level": 4 },
       { "name": "CI/CD (Jenkins, GitHub Actions)", "level": 4 },
-      { "name": "ArgoCD / Spinnaker",         "level": 3 }
+      { "name": "ArgoCD / Spinnaker", "level": 3 }
     ]
   },
   {
     "name": "Datastores & Caching",
     "skills": [
       { "name": "PostgreSQL / PL-pgSQL", "level": 5 },
-      { "name": "Redis / DynamoDB",      "level": 4 },
-      { "name": "MongoDB / MySQL",       "level": 4 },
-      { "name": "Cassandra / Elasticsearch","level": 3 },
-      { "name": "Neo4j (Graph DB)",      "level": 3 }
+      { "name": "Redis / DynamoDB", "level": 4 },
+      { "name": "MongoDB / MySQL", "level": 4 },
+      { "name": "Cassandra / Elasticsearch", "level": 3 },
+      { "name": "Neo4j (Graph DB)", "level": 3 }
     ]
   },
   {
     "name": "ML & Data Processing",
     "skills": [
-      { "name": "TensorFlow / PyTorch",  "level": 5 },
-      { "name": "Kubeflow / MLflow",     "level": 4 },
-      { "name": "Spark & Big-Data ETL",  "level": 3 },
-      { "name": "Airflow / DVC",         "level": 3 },
-      { "name": "Scikit-learn",          "level": 3 }
+      { "name": "TensorFlow / PyTorch", "level": 5 },
+      { "name": "Kubeflow / MLflow", "level": 4 },
+      { "name": "Spark & Big-Data ETL", "level": 3 },
+      { "name": "Airflow / DVC", "level": 3 },
+      { "name": "Scikit-learn", "level": 3 }
     ]
   },
   {
     "name": "Monitoring & Observability",
     "skills": [
-      { "name": "Prometheus & Grafana",  "level": 5 },
-      { "name": "Datadog / Sentry",      "level": 4 },
-      { "name": "OpenTelemetry",         "level": 4 },
+      { "name": "Prometheus & Grafana", "level": 5 },
+      { "name": "Datadog / Sentry", "level": 4 },
+      { "name": "OpenTelemetry", "level": 4 },
       { "name": "Chaos / Load Testing (Vegeta, k6)", "level": 3 }
     ]
   }
